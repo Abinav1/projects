@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #303841 grey*/
+/* #be3144 red */
+/* #f0f0f0 white */
+/* #45567d blue */
+/* welcome-section -> linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+body{
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    top: 0;
+    left: 0;
+    background-color: #be3144;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.77);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    padding: 15px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav a:hover{
+    background-color: #45567d;
+}
+h1,h2{
+    font-family: 'Raleway', sans-serif;
+}
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+    margin: auto;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); 
+    text-align: center;
+    /*******CENTER THE TEXT***********/ 
+    display: flex;              
+    flex-direction: column;
+    justify-content: center;
+    /******************/
+    font-size: 50px;
+}
+#welcome-section p{
+    color: rgb(190, 49, 68);
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+#projects{
+    background-color: #45567d;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+#projects h1{
+    border-bottom: 2px solid #f0f0f0;
+    margin: auto;
+    max-width: 700px;
+    padding-top: 100px;
+}
+#project-container{
+    padding: 60px 20px;
+    /* background-color: tomato; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 100px 0;
+    justify-content: space-between;
+}
+#project-container a{
+    background-color: rgb(48, 56, 65);
+    width: 400px;
+    height: 460px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#project-container img{
+    /* width: 100%;
+    height: 400px; */
+    width: 100%; 
+    height: 90%;
+    object-fit: cover;
+}
+#project-container a p{
+    /* background-color: lawngreen; */
+    /* padding-top: 5px; */
+    margin-top: 0;
+}
+#project-container a:hover{
+    color: red;
+    font-size: 25px;
+    background-color: white;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+#project-4{
+    grid-column: 2/3;
+}
+#contact{
+    background-color: rgb(48, 56, 65);
+    height: auto;
+    border-bottom:solid #be3144;
+}
+#contact h1{
+    padding-top: 140px;
+    font-size: 60px;
+    text-align: center;
+}
+#contact p{
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+}
+#contact ul a{
+    text-decoration: none;
+    color: #f0f0f0;
+    list-style: none;
+    
+}
+#contact ul{
+    /* background-color: khaki; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 23px;
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+    padding-bottom: 120px;
+}
+#contact ul i{
+    margin-right: 0.5rem;
+}
+#contact a:hover{
+    transform: translateY(8px);
+    transition: transform 0.3s ease-out;
+    background-color: #be3144;
+    border-radius: 5px;
+}
+footer{
+    background-color: rgb(48, 56, 65);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+footer a{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------- */
+                        
+                    /* mobile view */
+
+
+@media screen and (max-width: 1250px) {
+    
+    #project-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 50px 70px;
+        grid-column-gap: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    #project-container{
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding: 10% 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #contact a{
+        font-size: 15px;
+    }
+    footer{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+    footer #copyrights{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #projects h1{
+        font-size: 30px;
+        text-decoration: underline;
+        border-bottom: none;
+    }
+    #contact ul{
+        width: 100%;
+    }
+    #contact a{
+        margin: auto 0;
+        padding: auto 0;
+    }
+}

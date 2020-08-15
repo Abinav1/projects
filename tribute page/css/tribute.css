@@ -1,0 +1,50 @@
+body {
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+.container{
+    margin: 30px auto 30px auto;
+    background-color: rgb(238, 238, 238);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 0.8rem;
+}
+
+header{
+    text-align: center;
+}
+.image{
+    background-color: white;
+    background-position: center;
+    margin: 15px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#caption{
+    text-align: center;
+}
+.bottom{
+    width: 40%;
+    margin: auto;
+}
+li{
+    line-height: 2rem;
+    text-align: left;
+}
+
+footer{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 80px;
+}

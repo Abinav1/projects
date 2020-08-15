@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: 92%;
+}
+#navbar{
+    background-color: #FFFFFF;
+    width: 290px;
+    height: 100%;
+    position: fixed;
+    border-right: solid rgba(0, 22, 22, 0.4);
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    width: 100%;
+    padding: 10px 30px;
+}
+nav li{
+    border-top: 1px solid #4d4e53;
+}
+nav header{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*!!!!!!!   MAIN   !!!!!!!!!!!!!*/
+
+main{
+    margin-left: 310px;
+    margin-bottom: 110px;
+    padding: 20px;
+}
+
+/* code{
+    background-color: #f7f7f7;
+    margin: auto;
+    border-radius: 3px;
+    margin: 15px 0 15px 30px;
+} */
+code {
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 15px 0 15px 30px;
+    border-radius: 5px;
+  }
+section{
+    margin: 15px;
+}
+main header{
+    text-align: left;
+    margin: 0;
+    font-size: 1.8em;
+}
+main p, main ul{
+    color: #1E1F26;
+    font-weight: lighter;
+    margin: 15px 0 15px 20px;
+}
+
+
+/***********MOBILE PHONE***********/
+
+/* @media only screen and (max-width: 720PX){
+    body{
+        background-color: red;
+    }
+} */
+
+
+
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    main{
+      position: relative;
+      margin-left: 0px;
+      margin-right: 20px;
+      margin-top: 270px;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+  /* html code **
+                    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#wt-u-know" class="nav-link">What you should already know</a></li>
+                <li><a href="#java" class="nav-link">JavaScript and Java</a></li>
+                <li><a href="#hello" class="nav-link">Hello world</a></li>
+                <li><a href="#Variables" class="nav-link">Variables</a></li>
+                <li><a href="#Declaring" class="nav-link">Declaring variables</a></li>
+                <li><a href="#scope" class="nav-link">Variable scope</a></li>
+                <li><a href="#Global" class="nav-link">Global variables</a></li>
+                <li><a href="#Constants" class="nav-link">Constants</a></li>
+                <li><a href="#Data" class="nav-link">Data types</a></li>
+                <li><a href="#if" class="nav-link">if...else statement</a></li>
+                <li><a href="#while" class="nav-link">while statement</a></li>
+                <li><a href="#Function" class="nav-link">Function declarations</a></li>
+                <li><a href="#Reference" class="nav-link">Reference</a></li> 
+            ***/
